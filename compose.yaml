@@ -1,0 +1,26 @@
+services:
+  app:
+    restart: unless-stopped
+    network_mode: host
+    container_name: app
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    container_name: db
+    platform: linux/amd64
+    image: 'postgres:17.4'
+    environment:
+      - 'POSTGRES_DB=kunstner'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=user'
+    network_mode: host
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: [ "CMD-SHELL", "sh -c 'pg_isready --port 5432 --username=user --dbname=kunstner'" ]
+      interval: 2s
+      retries: 5
+      timeout: 1s
