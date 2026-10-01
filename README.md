@@ -16,7 +16,7 @@ The UI is built with Vite, Vue 3 and TailwindCSS.
 To start the development server, run:
 ```bash
 cd ui
-# npx msw init run once to generate the service worker file in the public directory
+# npx msw init # run once to generate the service worker file in the public directory
 npm run dev
 ```
 The UI will be available at `http://localhost:5173/local` as default.
