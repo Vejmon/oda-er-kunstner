@@ -5,7 +5,7 @@ import Header from "@/components/Header.vue";
 
 <template>
   <header>
-    <Header class="app-header" to="/lb" link-name="lbNewKusk"/>
+    <Header to="/lb" link-name="lbNewKusk"/>
   </header>
   <main>
   <div>
