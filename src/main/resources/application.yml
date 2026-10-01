@@ -10,7 +10,7 @@ spring:
     show-sql: false
   datasource:
     username: kunstner_api_user
-    password: password
+    password: ${DB_USER_PW}
     url: jdbc:postgresql://localhost:5432/kunstner
     driver-class-name: org.postgresql.Driver
     hikari:
@@ -21,8 +21,12 @@ spring:
   flyway:
     enabled: true
     user: kunstner_api_flyway
-    password: password
+    password: ${FLYWAY_USER_PW}
     url: jdbc:postgresql://localhost:5432/kunstner
+  security:
+    user:
+      name: admin
+      password: ${ADMIN_USER_PW}
 
 logging:
   file:

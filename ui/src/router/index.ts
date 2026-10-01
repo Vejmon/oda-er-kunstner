@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from "@/views/Home/Home.vue";
-import Liste from "@/views/Kunst/Liste.vue";
+import Liste from '@/views/Kunst/Liste.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -26,4 +26,4 @@ const router = createRouter({
     ],
 })
 
-export default router
+export default  router

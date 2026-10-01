@@ -11,6 +11,14 @@ export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production';
 
   return {
+    build: {
+      rolldownOptions: {
+        input: {
+          admin: fileURLToPath(new URL('./admin-page.html', import.meta.url)),
+          main: fileURLToPath(new URL('./index.html', import.meta.url)),
+        }
+      }
+    },
     plugins: [
       vue(),
       vueDevTools(),

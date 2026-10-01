@@ -1,5 +1,6 @@
 HELP.md
 .gradle
+.env
 build/
 **/dist/**
 **/resources/static/**
@@ -36,6 +37,7 @@ out/
 /nbdist/
 /.nb-gradle/
 
+*.env
 ### VS Code ###
 .vscode/
 **/node_modules/**
