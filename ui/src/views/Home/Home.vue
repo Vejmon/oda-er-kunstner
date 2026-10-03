@@ -5,7 +5,7 @@ import Header from "@/components/Header.vue";
 
 <template>
   <header>
-    <Header to="/lb" link-name="lbNewKusk"/>
+    <Header/>
   </header>
   <main>
   <div>

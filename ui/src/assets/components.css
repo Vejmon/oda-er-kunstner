@@ -11,4 +11,13 @@
     .input-text {
         @apply bg-black ring-2 ring-white rounded-lg w-4/5 xl:w-full p-1 pl-2
     }
+    .link-hover {
+        @apply cursor-pointer hover:scale-103 transition-transform duration-300
+    }
+
+}
+
+.gradient-fade {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
 }

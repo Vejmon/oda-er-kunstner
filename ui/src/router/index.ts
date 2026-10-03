@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from "@/views/Home/Home.vue";
-import Liste from '@/views/Kunst/Liste.vue';
+import Liste from '@/views/Liste.vue';
+import Landing from '@/views/Landing.vue';
+import Kontakt from '@/views/Kontakt.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -12,8 +14,22 @@ const router = createRouter({
             children: [
                 {
                     path: '',
-                    name: 'ArtList',
+                    name: 'Landing',
+                    component: Landing,
+                    children: [
+                    ]
+                },
+                {
+                    path: 'nyheter',
+                    name: 'Liste',
                     component: Liste,
+                    children: [
+                    ]
+                },
+                {
+                    path: 'kontakt',
+                    name: 'Kontakt',
+                    component: Kontakt,
                     children: [
                     ]
                 }

@@ -12,18 +12,19 @@ const props = defineProps({
 
 <template>
   <div class="app-header">
-    <div class="flex flex-row justify-between p-2">
-      <div class="flex flex-col items-center">
-        <a :href="to">
-          <div class="max-w-15">
-              Her kan du ha logoen din!
-          </div>
+    <div class="flex flex-row justify-center gap-2 p-2">
+        <a href="/" class="link-hover">
+          Hjem
+        </a>
+        <a href="/nyheter" class="link-hover">
+          nyheter
+        </a>
+        <a href="/kontakt" class="link-hover">
+          kontakt
         </a>
       </div>
-      <div class="ring-2 rounded-lg p-2 text-4xl">
-          Meir kunst!!1!
+      <div>
       </div>
-    </div>
   </div>
 </template>
 
