@@ -1,5 +1,5 @@
 import {http, HttpResponse} from 'msw'
-
+import articles from '@/mocks/articlePage.json' with {type: "json"};
 
 export const handlers = [
   // Intercepts requests to the backend
@@ -11,29 +11,12 @@ export const handlers = [
       status: 'UP'
     })
   }),
-  http.get('/nyheter', () => {
-    return HttpResponse.json(
-      [
-        {
-          id: "id1",
-          title: 'Lang tekst',
-          subtitle: "Lengre forklarende teskt om hva dette er for noe",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          link: 'https://vg.no'
-        },
-        {
-          id: "id2",
-          title: 'Kort tekst',
-          subtitle: "Lengre forklarende teskt om hva dette er for noe",
-          text: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
-          link: 'https://vg.no'
-        },
-        {
-          id: "id3",
-          title: 'uten lenke og subtittel',
-          text: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
-        }
-
-      ])
-  })
+  http.get("/articles", ({request}) => {
+    const page = new URL(request.url).searchParams.get("page");
+    if (page > 5) {
+      return HttpResponse.error()
+    }
+    articles.page.number = page;
+    return HttpResponse.json(articles)
+  }),
 ]

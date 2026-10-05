@@ -1,4 +1,5 @@
 import ArticlePage from '@/components/ArticlePage.vue';
+import articles from '@/mocks/articlePage.json' with {type: "json"};
 
 export default {
   title: 'Components/ArticlePage',
@@ -19,51 +20,6 @@ export default {
 
 export const Default = {
   args: {
-      "_embedded": {
-          "articles": [
-              {
-                  "title": "tittel fra Postman",
-                  "subtitle": null,
-                  "text": "Denne lange teksten er ifra Postman, lover!",
-                  "created": "2026-10-05T17:40:00.913+00:00",
-                  "_links": {
-                      "self": {
-                          "href": "http://localhost:8080/articles/910faefa-399b-47a7-8302-6643182067b5"
-                      },
-                      "article": {
-                          "href": "http://localhost:8080/articles/910faefa-399b-47a7-8302-6643182067b5"
-                      }
-                  }
-              },
-              {
-                  "title": "Enda en tittel",
-                  "subtitle": null,
-                  "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-                  "created": "2026-10-05T17:40:45.817+00:00",
-                  "_links": {
-                      "self": {
-                          "href": "http://localhost:8080/articles/c20c893e-b695-4a66-930c-2b61e22e319d"
-                      },
-                      "article": {
-                          "href": "http://localhost:8080/articles/c20c893e-b695-4a66-930c-2b61e22e319d"
-                      }
-                  }
-              }
-          ]
-      },
-      "_links": {
-          "self": {
-              "href": "http://localhost:8080/articles?page=0&size=20"
-          },
-          "profile": {
-              "href": "http://localhost:8080/profile/articles"
-          }
-      },
-      "page": {
-          "size": 20,
-          "totalElements": 2,
-          "totalPages": 1,
-          "number": 0
-      }
-    }
+      ...articles
+  }
 };

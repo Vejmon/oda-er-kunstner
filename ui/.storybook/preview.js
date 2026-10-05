@@ -1,4 +1,8 @@
 import '../src/assets/main.css';
+import { worker } from '@/mocks/browser.js'
+
+worker.start({ onUnhandledRequest: 'bypass' })
+
 
 /** @type { import('@storybook/vue3-vite').Preview } */
 const preview = {

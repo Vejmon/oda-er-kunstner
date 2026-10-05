@@ -9,11 +9,8 @@ export const postData = async (url = '', data = {}) => {
         });
 }
 
-export const getData = async (url = '', size = 20) => {
+export const getData = async (url = '') => {
     return await axios.get(url, {
-        params: {
-            size: size
-        },
         headers: {
             'Content-Type': 'application/json'
         },
