@@ -52,3 +52,17 @@ springdoc:
     enabled: false
   swagger-ui:
     enabled: false
+
+---
+
+spring:
+    config:
+        activate:
+            on-profile: test
+    security:
+      user:
+        password: admin
+    flyway:
+      password: password
+    datasource:
+      password: password

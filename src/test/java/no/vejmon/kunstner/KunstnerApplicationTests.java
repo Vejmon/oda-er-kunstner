@@ -11,6 +11,7 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 @Testcontainers
 @SpringBootTest
 public class KunstnerApplicationTests {
+
     @Container
     @ServiceConnection
     static PostgreSQLContainer<?> postgres =
