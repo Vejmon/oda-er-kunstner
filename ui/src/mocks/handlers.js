@@ -11,8 +11,9 @@ export const handlers = [
       status: 'UP'
     })
   }),
-  http.get("/articles", ({request}) => {
+  http.get("/articles", async ({request}) => {
     const page = new URL(request.url).searchParams.get("page");
+    await new Promise(resolve => setTimeout(resolve, 1000));
     if (page > 5) {
       return HttpResponse.error()
     }
