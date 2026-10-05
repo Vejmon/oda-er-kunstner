@@ -19,7 +19,6 @@ const props = defineProps({
   text: {
     type: String,
     required: true,
-    default: ''
   },
   link: {
     type: String,
