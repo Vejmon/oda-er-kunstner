@@ -53,12 +53,12 @@ tasks {
 }
 
 tasks.register('cleanStatic', Delete) {
-    dependsOn npmBuild
     delete "${projectDir}/src/main/resources/static"
 }
 
 
 tasks.register('npmDoInstall', NpmTask) {
+    dependsOn cleanStatic
     workingDir = file("${projectDir}/ui")
     args = ['install']
 }

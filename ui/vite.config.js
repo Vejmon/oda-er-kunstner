@@ -5,20 +5,11 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
-
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production';
 
   return {
-    build: {
-      rolldownOptions: {
-        input: {
-          admin: fileURLToPath(new URL('./admin-page.html', import.meta.url)),
-          main: fileURLToPath(new URL('./index.html', import.meta.url)),
-        }
-      }
-    },
     plugins: [
       vue(),
       vueDevTools(),

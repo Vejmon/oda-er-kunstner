@@ -8,6 +8,6 @@ public class Controlla {
 
     @GetMapping("/admin")
     public String admin() {
-        return "admin-page.html";
+        return "index.html";
     }
 }

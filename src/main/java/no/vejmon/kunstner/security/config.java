@@ -16,10 +16,11 @@ public class config {
     public SecurityFilterChain mySecurityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/admin/**", "/admin-page.html", "/api/**").authenticated()
+                        .requestMatchers("/admin/**", "/api/**").authenticated()
                         .anyRequest().permitAll()
                 )
                 .logout(withDefaults())
-                .formLogin(withDefaults()).build();
+                .formLogin( withDefaults())
+            .build();
     }
 }
