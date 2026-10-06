@@ -38,7 +38,7 @@ export default defineConfig(({ mode }) => {
       { pattern: /bg-(red|green|gray|yellow)-\d{3}/},
       { pattern: /border-(red|green|gray|yellow|orange|slate)-\d{3}/},
       { pattern: /text-(white|black)/},
-      { pattern: /(m|p)-\d{3}/},
+      { pattern: /(m|p|space-y|space-x)-\d{3}/},
     ]
   }
 });

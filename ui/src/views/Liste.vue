@@ -30,7 +30,7 @@ onUnmounted(() =>{
 
 <template>
   <div>
-    <p v-if="loading">
+    <p v-if="loading" class="flex flex-col">
       <ArticleSkeleton></ArticleSkeleton>
       <ArticleSkeleton></ArticleSkeleton>
       <ArticleSkeleton></ArticleSkeleton>

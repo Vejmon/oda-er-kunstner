@@ -8,9 +8,6 @@ import Header from "@/components/Header.vue";
     <Header/>
   </header>
   <main>
-  <div>
-    Hej fra Home
-  </div>
     <router-view />
   </main>
 

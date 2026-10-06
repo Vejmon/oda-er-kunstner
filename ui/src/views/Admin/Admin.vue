@@ -5,11 +5,10 @@ import Header from "@/components/Header.vue";
 
 <template>
   <header>
-    <Header class="app-header" to="/lb" link-name="lbNewKusk"/>
+    <Header/>
   </header>
   <main>
   <div>
-    Hej fra Admin
   </div>
     <router-view />
   </main>
