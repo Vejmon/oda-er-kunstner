@@ -1,23 +1,42 @@
 <script setup lang="ts">
 import ArticlePage from "@/components/ArticlePage.vue";
-import {ref} from "vue";
+import {onMounted, onUnmounted, ref} from "vue";
 import {getData} from "@/utils/api.js"
-import ArticlePreview from "@/components/ArticlePreview.vue";
+import ArticleSkeleton from "@/components/ArticleSkeleton.vue";
+
 const loading = ref(true);
-const firstPage = ref(await getData("/articles"))
-console.log(firstPage.value)
-loading.value = false
+const error = ref(false);
+const firstPage = ref(null)
+
+onMounted( async () => {
+  firstPage.value = await getData("/articles")
+    .then(data => {
+      error.value = false;
+      return data;
+  })
+    .catch(() =>{
+      error.value = true;
+  })
+    .finally(() =>{
+      loading.value = false;
+  })
+});
+
+onUnmounted(() =>{
+  loading.value = true
+})
+
 </script>
 
 <template>
   <div>
-    altså... den er lastet?
-  </div>
-  <div>
-    lista loader?
-    <p v-if="loading">Loading...</p>
-  <!-- <p v-else-if="error">Error: {{ error }}</p> -->
-    <ArticlePage v-else :_embedded="firstPage._embedded" :_links="firstPage._links" :page="firstPage.page"></ArticlePage>
+    <p v-if="loading">
+      <ArticleSkeleton></ArticleSkeleton>
+      <ArticleSkeleton></ArticleSkeleton>
+      <ArticleSkeleton></ArticleSkeleton>
+    </p>
+      <p v-else-if="error">Hups, her har det skjedd en feil!</p>
+    <ArticlePage v-if="firstPage" v-bind="firstPage"></ArticlePage>
   </div>
 </template>
 

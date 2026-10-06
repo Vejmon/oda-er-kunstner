@@ -1,6 +1,7 @@
 import './assets/main.css'
 
-import {createApp} from 'vue'
+import {createApp, markRaw} from 'vue'
+import {createPinia} from 'pinia'
 
 export async function prepareApp() {
     if (import.meta.env.DEV) {
@@ -15,6 +16,10 @@ export async function prepareApp() {
 
 // Boot the app after prepareApp finishes
 export async function bootstrap(app, router){
+    const pinia = createPinia()
+    pinia.use(({ store }) => {
+        store.router = markRaw(router)
+    })
     await prepareApp()
     createApp(app)
         .use(router)

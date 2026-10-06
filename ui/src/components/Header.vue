@@ -13,15 +13,15 @@ const props = defineProps({
 <template>
   <div class="app-header">
     <div class="flex flex-row justify-center gap-4 p-2">
-        <a href="/" class="link-hover hover:text-gray-300">
+        <router-link to="/" class="link-hover hover:text-gray-300">
           Hjem
-        </a>
-        <a href="/nyheter" class="link-hover hover:text-gray-300">
+        </router-link>
+        <router-link to="/nyheter" class="link-hover hover:text-gray-300">
           nyheter
-        </a>
-        <a href="/kontakt" class="link-hover hover:text-gray-300">
+        </router-link>
+        <router-link to="/kontakt" class="link-hover hover:text-gray-300">
           kontakt
-        </a>
+        </router-link>
       </div>
       <div>
       </div>
