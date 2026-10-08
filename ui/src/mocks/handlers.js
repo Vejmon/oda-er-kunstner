@@ -12,7 +12,10 @@ export const handlers = [
     })
   }),
   http.get("/articles", async ({request}) => {
-    const page = new URL(request.url).searchParams.get("page");
+    let page = new URL(request.url).searchParams.get("page");
+    if (!page){
+      page = 0
+    }
     await new Promise(resolve => setTimeout(resolve, 1000));
     if (page > 5) {
       return HttpResponse.error()

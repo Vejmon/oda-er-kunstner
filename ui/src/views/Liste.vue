@@ -6,13 +6,13 @@ import ArticleSkeleton from "@/components/ArticleSkeleton.vue";
 
 const loading = ref(true);
 const error = ref(false);
-const firstPage = ref(null)
+const firstPage = ref({_embedded: {}, _links: {}, page: {}});
 
 onMounted( async () => {
-  firstPage.value = await getData("/articles")
+  await getData("/articles")
     .then(data => {
       error.value = false;
-      return data;
+      firstPage.value = data
   })
     .catch(() =>{
       error.value = true;
@@ -25,18 +25,19 @@ onMounted( async () => {
 onUnmounted(() =>{
   loading.value = true
 })
-
 </script>
 
 <template>
-  <div>
-    <p v-if="loading" class="flex flex-col">
-      <ArticleSkeleton></ArticleSkeleton>
-      <ArticleSkeleton></ArticleSkeleton>
-      <ArticleSkeleton></ArticleSkeleton>
-    </p>
+  <div class="flex flex-col gap-4 w-full content-stretch p-10">
+    <transition name="fade" mode="out-in">
+      <div v-if="loading" class="flex flex-col gap-4">
+        <ArticleSkeleton></ArticleSkeleton>
+        <ArticleSkeleton></ArticleSkeleton>
+        <ArticleSkeleton class="gradient-fade"></ArticleSkeleton>
+      </div>
       <p v-else-if="error">Hups, her har det skjedd en feil!</p>
-    <ArticlePage v-if="firstPage" v-bind="firstPage"></ArticlePage>
+      <ArticlePage v-else v-bind="firstPage"/>
+    </transition>
   </div>
 </template>
 
