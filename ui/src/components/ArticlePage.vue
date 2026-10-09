@@ -1,5 +1,5 @@
-<script setup>
-import { useTemplateRef, onMounted, onUnmounted, computed, ref} from 'vue';
+<script setup >
+import { ref, onMounted, computed} from 'vue';
 import { useInfiniteScroll } from '@vueuse/core';
 import ArticlePreview from "@/components/ArticlePreview.vue";
 import {getData} from "@/utils/api.js";
@@ -19,30 +19,47 @@ const props = defineProps({
   },
 });
 
-const listElement = ref(null);
 const isLoading = ref(false);
-const currentPage = ref(props.page.number);
+const error = ref(false);
+const currentLinks = ref(props._links);
 const data = ref(props._embedded.articles)
 
 // Define the function to load more data
 const loadMore = async () => {
   if (isLoading.value) return;
   isLoading.value = true;
-  currentPage.value = currentPage.value + 1;
-  const url = new URL(props._links.self.href)
-  url.searchParams.set("page", currentPage.value);
-
-  const newItems = await getData(url.pathname + url.search)
-  await data.value.push(...newItems._embedded.articles);
-  isLoading.value = false;
+  const url = new URL(currentLinks.value.next.href)
+  await getData(url.pathname + url.search)
+      .then((newItems) => {
+        currentLinks.value = newItems._links
+        data.value.push(...newItems._embedded.articles)
+      })
+      .catch(() => {
+        error.value = true;
+      })
+      .finally(() => {
+        isLoading.value = false;
+      })
 };
 
+const stopLoading = computed(() => {
+  return !Object.keys(currentLinks.value).includes("next")
+})
+
 // Initialize infinite scroll
-useInfiniteScroll(
-  listElement,
-  loadMore,
-  { distance: 1 } // Trigger load when 10px from bottom
-);
+onMounted(() =>{
+  useInfiniteScroll(
+      window,
+      loadMore,
+      {
+        distance: 100,
+        canLoadMore: () => {
+          if (error.value) return false
+
+          return Object.keys(currentLinks.value).includes("next")
+        }
+      })
+})
 
 </script>
 
@@ -50,9 +67,10 @@ useInfiniteScroll(
 <template>
   <ul ref="listElement" class="flex flex-col gap-4">
     <li v-for="(item, index) in data" :key="index">
-        <ArticlePreview v-bind="item" :link="item._links.self"/>
+        <ArticlePreview v-bind="item" :link="item._links.self.href"/>
     </li>
   </ul>
+  <div v-if="stopLoading">Ingen flere nyheter</div>
 </template>
 
 

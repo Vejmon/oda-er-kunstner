@@ -2,152 +2,152 @@
   "_embedded": {
     "articles": [
       {
-        "id": "d9c0c259-663b-41c0-a197-70226c82bc8a",
+        "id": "71a1ef6f-b6a4-451b-9e61-83152b8f5a8a",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:32.896+00:00",
+        "created": "2026-10-09T20:11:43.681+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/d9c0c259-663b-41c0-a197-70226c82bc8a"
+            "href": "http://localhost:8080/articles/71a1ef6f-b6a4-451b-9e61-83152b8f5a8a"
           },
           "article": {
-            "href": "http://localhost:8080/articles/d9c0c259-663b-41c0-a197-70226c82bc8a"
+            "href": "http://localhost:8080/articles/71a1ef6f-b6a4-451b-9e61-83152b8f5a8a"
           }
         }
       },
       {
-        "id": "ddae6512-d51a-4a0f-a355-b8b2d05f3958",
+        "id": "0f776f5e-ce21-4dc8-b7d7-0bb1ad1c8d26",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:36.122+00:00",
+        "created": "2026-10-09T20:11:44.242+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/ddae6512-d51a-4a0f-a355-b8b2d05f3958"
+            "href": "http://localhost:8080/articles/0f776f5e-ce21-4dc8-b7d7-0bb1ad1c8d26"
           },
           "article": {
-            "href": "http://localhost:8080/articles/ddae6512-d51a-4a0f-a355-b8b2d05f3958"
+            "href": "http://localhost:8080/articles/0f776f5e-ce21-4dc8-b7d7-0bb1ad1c8d26"
           }
         }
       },
       {
-        "id": "8de2dcee-d389-453e-a5f4-57d43d243f97",
+        "id": "491f227d-0afa-4c07-9d79-5ff62098c752",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:37.806+00:00",
+        "created": "2026-10-09T20:11:44.801+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/8de2dcee-d389-453e-a5f4-57d43d243f97"
+            "href": "http://localhost:8080/articles/491f227d-0afa-4c07-9d79-5ff62098c752"
           },
           "article": {
-            "href": "http://localhost:8080/articles/8de2dcee-d389-453e-a5f4-57d43d243f97"
+            "href": "http://localhost:8080/articles/491f227d-0afa-4c07-9d79-5ff62098c752"
           }
         }
       },
       {
-        "id": "8e8e8bcf-cd16-4ad2-b235-fdfe591261a0",
+        "id": "89335bff-d10b-42a5-b970-f36ad072f71b",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:39.089+00:00",
+        "created": "2026-10-09T20:12:26.481+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/8e8e8bcf-cd16-4ad2-b235-fdfe591261a0"
+            "href": "http://localhost:8080/articles/89335bff-d10b-42a5-b970-f36ad072f71b"
           },
           "article": {
-            "href": "http://localhost:8080/articles/8e8e8bcf-cd16-4ad2-b235-fdfe591261a0"
+            "href": "http://localhost:8080/articles/89335bff-d10b-42a5-b970-f36ad072f71b"
           }
         }
       },
       {
-        "id": "f3f4c7bf-f6e9-46b8-8d71-6a2aee682d4f",
+        "id": "67d744de-33ca-4d3f-971e-3e809291c3de",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:39.994+00:00",
+        "created": "2026-10-09T20:12:26.978+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/f3f4c7bf-f6e9-46b8-8d71-6a2aee682d4f"
+            "href": "http://localhost:8080/articles/67d744de-33ca-4d3f-971e-3e809291c3de"
           },
           "article": {
-            "href": "http://localhost:8080/articles/f3f4c7bf-f6e9-46b8-8d71-6a2aee682d4f"
+            "href": "http://localhost:8080/articles/67d744de-33ca-4d3f-971e-3e809291c3de"
           }
         }
       },
       {
-        "id": "8ea0a21f-0cd1-4098-bf88-901c2bcfc02f",
+        "id": "5376f3f3-bc02-49a9-bba2-06fc9740314b",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:40.718+00:00",
+        "created": "2026-10-09T20:12:27.456+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/8ea0a21f-0cd1-4098-bf88-901c2bcfc02f"
+            "href": "http://localhost:8080/articles/5376f3f3-bc02-49a9-bba2-06fc9740314b"
           },
           "article": {
-            "href": "http://localhost:8080/articles/8ea0a21f-0cd1-4098-bf88-901c2bcfc02f"
+            "href": "http://localhost:8080/articles/5376f3f3-bc02-49a9-bba2-06fc9740314b"
           }
         }
       },
       {
-        "id": "e4cb5382-f963-4951-b528-220e0376e4fb",
+        "id": "3291b771-f2bc-4d8c-9027-ea27095832f7",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:41.325+00:00",
+        "created": "2026-10-09T20:12:27.903+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/e4cb5382-f963-4951-b528-220e0376e4fb"
+            "href": "http://localhost:8080/articles/3291b771-f2bc-4d8c-9027-ea27095832f7"
           },
           "article": {
-            "href": "http://localhost:8080/articles/e4cb5382-f963-4951-b528-220e0376e4fb"
+            "href": "http://localhost:8080/articles/3291b771-f2bc-4d8c-9027-ea27095832f7"
           }
         }
       },
       {
-        "id": "9ef5fe48-2086-416c-be94-69f1b954863e",
+        "id": "a5e76a04-a557-41ba-903e-35e45418d5f9",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:41.932+00:00",
+        "created": "2026-10-09T20:12:28.371+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/9ef5fe48-2086-416c-be94-69f1b954863e"
+            "href": "http://localhost:8080/articles/a5e76a04-a557-41ba-903e-35e45418d5f9"
           },
           "article": {
-            "href": "http://localhost:8080/articles/9ef5fe48-2086-416c-be94-69f1b954863e"
+            "href": "http://localhost:8080/articles/a5e76a04-a557-41ba-903e-35e45418d5f9"
           }
         }
       },
       {
-        "id": "1e391d74-0468-4c47-9a55-a5b9ff3f4a51",
+        "id": "803374b8-1e5f-438a-8318-630efec9bc71",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:42.499+00:00",
+        "created": "2026-10-09T20:12:28.822+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/1e391d74-0468-4c47-9a55-a5b9ff3f4a51"
+            "href": "http://localhost:8080/articles/803374b8-1e5f-438a-8318-630efec9bc71"
           },
           "article": {
-            "href": "http://localhost:8080/articles/1e391d74-0468-4c47-9a55-a5b9ff3f4a51"
+            "href": "http://localhost:8080/articles/803374b8-1e5f-438a-8318-630efec9bc71"
           }
         }
       },
       {
-        "id": "e5d40e16-c2f4-4824-a1a9-0d645aab5767",
+        "id": "15cfee73-34d9-4726-be76-a99f8865bd6e",
         "title": "Enda en tittel",
         "subtitle": null,
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:43.080+00:00",
+        "created": "2026-10-09T20:12:29.252+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/e5d40e16-c2f4-4824-a1a9-0d645aab5767"
+            "href": "http://localhost:8080/articles/15cfee73-34d9-4726-be76-a99f8865bd6e"
           },
           "article": {
-            "href": "http://localhost:8080/articles/e5d40e16-c2f4-4824-a1a9-0d645aab5767"
+            "href": "http://localhost:8080/articles/15cfee73-34d9-4726-be76-a99f8865bd6e"
           }
         }
       }
@@ -157,10 +157,10 @@
     "first": {
       "href": "http://localhost:8080/articles?page=0&size=10"
     },
-    "self": {
+    "prev": {
       "href": "http://localhost:8080/articles?page=0&size=10"
     },
-    "next": {
+    "self": {
       "href": "http://localhost:8080/articles?page=1&size=10"
     },
     "last": {
@@ -174,6 +174,6 @@
     "size": 10,
     "totalElements": 34,
     "totalPages": 4,
-    "number": 0
+    "number": 1
   }
 }

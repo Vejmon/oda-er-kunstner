@@ -29,15 +29,13 @@ onUnmounted(() =>{
 
 <template>
   <div class="flex flex-col gap-4 w-full content-stretch p-10">
-    <transition name="fade" mode="out-in">
-      <div v-if="loading" class="flex flex-col gap-4">
-        <ArticleSkeleton></ArticleSkeleton>
-        <ArticleSkeleton></ArticleSkeleton>
-        <ArticleSkeleton class="gradient-fade"></ArticleSkeleton>
-      </div>
-      <p v-else-if="error">Hups, her har det skjedd en feil!</p>
-      <ArticlePage v-else v-bind="firstPage"/>
-    </transition>
+    <div v-if="loading" class="flex flex-col gap-4">
+      <ArticleSkeleton></ArticleSkeleton>
+      <ArticleSkeleton></ArticleSkeleton>
+      <ArticleSkeleton class="gradient-fade"></ArticleSkeleton>
+    </div>
+    <p v-else-if="error">Hups, her har det skjedd en feil!</p>
+    <ArticlePage v-else v-bind="firstPage"/>
   </div>
 </template>
 
